@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <h1>黑马头条</h1>
+    <!-- 路由的出口 -->
     <router-view/>
   </div>
 </template>
+
+<script>
+export default {
+  // 写这个名字是为了在google浏览器中的vue调试工具中可以用名字搜索到
+  name:'App'
+}
+</script>
+
+
 
 <style lang="less">
 #app {
